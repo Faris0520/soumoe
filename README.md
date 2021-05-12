@@ -1,2 +1,1 @@
-# soumoe
-just a bott
+welcum to projek soumoe
