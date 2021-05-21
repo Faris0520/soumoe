@@ -10,5 +10,5 @@ app.get("/", (request, response) => {
 app.listen(process.env.PORT);
 setInterval(() => {
   http.get(`http://soumoe.glitch.me/`);
-}, 250000); 
+}, 25000); 
 
