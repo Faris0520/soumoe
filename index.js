@@ -81,25 +81,6 @@ bot.on("message", async (message) => {
   if (message.content === "test"){
     message.react(`${ranem}`)
   }
-  /*if (message.content === "spi" || message.content === "spi :eugh:" || message.content === "spi <:eugh:831477683426295811>"){
-    message.react(emgj[ranem])
-    message.react(emgj[ranem])
-  }
-  if (message.content === "sepi"){
-    message.react(emgj[ranem])
-  }
-  if (message.content === "<:eugh:831477683426295811>"){
-    message.react(emgj[ranem]) 
-  }
-  if (message.content === "<:ndaktau:831494322901352498>"){
-    message.react(`${emgj[ranem]}`)
-  }
-  if (message.content === "<:patk3:727906033061855232>"){
-    message.react(emgj[ranem])
-  }
-  if (message.content === "<:heeeeeqqq:730722268107505725>"){
-    message.react(emgj[ranem])
-  }*/
     if (message.author.bot) return;
 
    const args = message.content.split(" ");
@@ -122,33 +103,7 @@ let color = "BLUE"
         }
   // ------------------- OTHER COMMANDS -----------------------//
         if (!message.content.startsWith(PREFIX)) return;
- if (command === "w" | command === "waifu"){
-    const adios = require('axios').default;
-
-var options = {
-  method: 'GET',
-  url: 'https://animu.p.rapidapi.com/waifu',
-  headers: {
-    auth: '31186a66bedaf8cec5709cb65daedf71806890645fe8',
-    'x-rapidapi-key': '8c4189ecbamsha08a1ccd63b8c39p1a40b3jsnd160b540e4cf',
-    'x-rapidapi-host': 'animu.p.rapidapi.com'
-  }
-};
-
-axios.request(options).then(function (response) {
-  console.log(response.data);
-  var data = response.data
-  var p = new MessageEmbed()
-        .setColor('BLUE')
-        .setImage(data.images[0])
-        .setAuthor(data.names.en)
-        .setDescription(`${data.names.jp}\n${data.from.name}\n\n---------------\n:star: : ${data.statistics.fav}\n:heart: : ${data.statistics.love}\n:arrow_up: : ${data.statistics.upvote}\n:arrow_down: : ${data.statistics.downvote}`)
-          message.channel.send(p)
-}).catch(function (error) {
-  console.error(error)
-  message.channel.send(error);
-});
-        }
+ 
   if (command === "fact"){
     var axios = require("axios").default;
   var options = {
