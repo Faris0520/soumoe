@@ -104,29 +104,6 @@ let color = "BLUE"
   // ------------------- OTHER COMMANDS -----------------------//
         if (!message.content.startsWith(PREFIX)) return;
  
-  if (command === "fact"){
-    var axios = require("axios").default;
-  var options = {
-  method: 'GET',
-  url: 'https://animu.p.rapidapi.com/fact',
-  headers: {
-    auth: '31186a66bedaf8cec5709cb65daedf71806890645fe8',
-    'x-rapidapi-key': '8c4189ecbamsha08a1ccd63b8c39p1a40b3jsnd160b540e4cf',
-    'x-rapidapi-host': 'animu.p.rapidapi.com'
-  }}
-     axios.request(options).then(function (response) {
-        let data = response.data
-        p = new MessageEmbed()
-       .setAuthor('Anime Fact', `https://cdn.discordapp.com/emojis/825083895057219624.png?v=1`)
-       .setColor('BLUE')
-       .setDescription(data.fact)
-       .setFooter(`${message.author.username} karna lo wibu`)
-         message.channel.send(p)
-      }).catch(function(error){
-          message.channel.send(`Error ngab. [h.fact] <@${owner}>`)
-          console.log(error)
-      })
-};
 if (command === "wink"){
   const axios = require('axios')
     const url = `https://some-random-api.ml/animu/wink`
