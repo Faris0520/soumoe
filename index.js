@@ -25,13 +25,6 @@ const queue = new Map();
 
 bot.on("warn", console.warn);
 bot.on("error", console.error);
-const getapp = (guild) => {
-  const app = bot.api.applications(bot.user.id)
-  if (guild) {
-    app.guilds(guild)
-  }
-  return app
-}
 bot.on("ready", async () => {
   console.log(`[READY] ${bot.user.tag} has been successfully booted up!`)
 /* bot.user.setPresence({
