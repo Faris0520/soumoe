@@ -98,18 +98,6 @@ let color = "BLUE"
         }
   // ------------------- OTHER COMMANDS -----------------------//
         if (!message.content.startsWith(PREFIX)) return;
- 
-if (command === "wink"){
-  const axios = require('axios')
-    const url = `https://some-random-api.ml/animu/wink`
-    const got = require('got')
-    let data = await got(url).then(res => JSON.parse(res.body))
-    var p = new MessageEmbed()
-    .setImage(data.link)
-    .setColor('BLUE')
-    .setFooter('karna lo wibu')
-    message.channel.send(p)
-}
 if (command === "wasted"){
     const got = require('got')
      const user = message.mentions.users.first() || message.author;
