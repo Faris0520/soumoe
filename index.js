@@ -15,7 +15,6 @@ const dF = require('dateformat')
 dF('dd-mm-yyyy')
 var now = new Date()
 let nw = dF(now, "DD-MM-YYYY")
-const guild = '695851369277685760'
 //-----------HANDLER Boi ------------//
 //----------------------------------//
 const bot = new Client
