@@ -11,10 +11,6 @@ const fetch = require("node-fetch")
 const superagent = require("superagent")
 const morse = require("morse-node").create("ITU")
 var owner = "695817459206324265"
-const dF = require('dateformat')
-dF('dd-mm-yyyy')
-var now = new Date()
-let nw = dF(now, "DD-MM-YYYY")
 //-----------HANDLER Boi ------------//
 //----------------------------------//
 const bot = new Client
