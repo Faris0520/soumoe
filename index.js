@@ -98,30 +98,6 @@ let color = "BLUE"
         }
   // ------------------- OTHER COMMANDS -----------------------//
         if (!message.content.startsWith(PREFIX)) return;
-if (command === "wasted"){
-    const got = require('got')
-     const user = message.mentions.users.first() || message.author;
-    const url = `https://some-random-api.ml/canvas/wasted?avatar=${user.avatarURL({size: 1024, dynamic: 'JPG'})}`
-    let attachmnet = new Discord.MessageAttachment(`https://some-random-api.ml/canvas/wasted/?avatar=${message.author.avatarURL({ format: 'png'})}`, 'triggered.gif')
-    return message.channel.send(attachmnet)
-    /* let response, data;
-        try {
-            response = await axios.get(url)
-            data = response.data
-        } catch (e) {
-            return message.channel.send(`Error ngab`)
-        }*/
-        message.channel.send('Maintain!')
-}
-if (command === "ytcomment"| command === "ytc"){
-  const got = require('got')
-    const user = message.mentions.users.first() || message.author;
-    let att = new Discord.MessageAttachment(`https://some-random-api.ml/canvas/youtube-comment?username=${user.username}&comment=${searchString}&avatar=${user.avatarURL({size: 1024, dynamic: 'JPG'})}`, 'ytc.jpg')
-  message.channel.send(att.attachment)
-    p = new MessageEmbed()
-    .setImage(att.attachment)
-    message.channel.send(p)
-}
   if (command === "clear"){
     if (!searchString) return message.channel.send('masukkan jumlah!')
     if (message.author.id !== owner) return message.channel.send('hi')
