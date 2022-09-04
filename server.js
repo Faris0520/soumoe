@@ -13,3 +13,4 @@ setInterval(() => {
 }, 25000); 
 
 // hooh tenan apa dsadk
+// gatau
